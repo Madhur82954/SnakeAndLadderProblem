@@ -30,7 +30,9 @@ namespace SnakeAndLadderProblem
 
                         case 1:
                             Console.WriteLine("Ladder. The Player Moves Ahead By " + Dieroll + " Positions");
-                            currpos += Dieroll;
+
+                            if(currpos + Dieroll <= Finalpos)
+                                currpos += Dieroll;
                             break;
 
                         case 2:
