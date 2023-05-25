@@ -10,6 +10,7 @@ namespace SnakeAndLadderProblem
             int currpos = 0;
             int Finalpos = 100;
             Console.WriteLine("Start pos = " + currpos);
+            int DiceRoll = 0;
 
             //UC2- RollDie
             Random random = new Random();
@@ -45,11 +46,12 @@ namespace SnakeAndLadderProblem
                             }
                             break;
                     }
-                Console.WriteLine("Current Position = " + currpos);
+                    DiceRoll++;
+                    Console.WriteLine("Current Position = " + currpos);
 
             }
             Console.WriteLine("Congratulations! Player Has reached to the winning position");
-            
+            Console.WriteLine("Number of DiceRolls = " + DiceRoll);
         }
     }
 }
